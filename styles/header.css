@@ -1,5 +1,5 @@
 header {
-  padding-block: 32px;
+  padding-block: 2rem;
   font: var(--text-md);
 }
 
@@ -11,16 +11,16 @@ header .container {
 
 #profile {
   display: flex;
-  gap: 32px;
+  gap: 2rem;
 }
 
 #profile > div {
-  max-width: 394px;
+  max-width: 24.625rem;
 }
 
 #profile img {
-  width: 176px;
-  height: 176px;
+  width: 11rem;
+  height: 11rem;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -28,20 +28,42 @@ header .container {
 #profile h1 {
   font: var(--text-lg);
   color: var(--text-color-primary);
-  margin-bottom: 8px;
+  margin-bottom: .5rem;
 }
 
 #info {
-  width: 280px;
+  max-width: 17.5rem;
   list-style: none;
 
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
+  margin-right: 8rem;
 }
 
 #info li {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: .5rem;
+}
+
+
+@media (width <= 31.25em) {
+  header .container {
+    display: block;
+  }
+  
+  #profile {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  #profile img {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  #profile h1 {
+    font-size: 1.5rem;
+  }
 }

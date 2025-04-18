@@ -1,11 +1,28 @@
 footer {
   display: flex;
-  gap: 24px;
-  padding-block: 24px;
-
-  font: 14px/150% var(--font-family);
+  padding-block: 1.5rem;
+  font: 0.875em/150% var(--font-family);
 }
 
-footer span:nth-child(1) {
+footer div {
+  display: flex;
+  gap: 1.5rem;
+}
+
+footer span {
   margin-right: auto;
+}
+
+
+@media (width <= 31.25em) {
+  footer {
+    flex-direction: column;
+    padding-block: 1rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  footer span {
+    margin: 0 auto;
+  }
 }
