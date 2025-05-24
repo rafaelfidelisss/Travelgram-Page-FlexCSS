@@ -19,7 +19,8 @@
 
 ## 💻 Projeto
 
-Um layout do perfil de uma rede social de fotos de viagem, para praticar os coneitos de CSS Flexbox.
+Um layout do perfil de uma rede social de fotos de viagem fictícia.<br>
+Projeto desenvolvido para praticar os conceitos de CSS Flexbox.
 
 [![project][PROJECT__BADGE]][PROJECT__URL]
 
